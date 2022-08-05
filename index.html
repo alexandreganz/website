@@ -1,0 +1,946 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	<meta name="generator" content="Hugo 0.101.0" />
+
+    <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=GTM-WSN7LR9' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WSN7LR9');
+</script>
+
+
+<title></title>
+<style>
+
+    .rad-fade-in {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in.rad-animate {
+        animation-name: rad-fade-in;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+
+    .rad-fade-in-long {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-long-fallback;
+        animation-duration: 8s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-animate {
+        animation-name: rad-fade-in-long;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+
+    .rad-fade-down {
+        will-change: opacity, transform;
+        animation-name: rad-fade-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform: translateY(-30px);
+    }
+
+    @keyframes rad-fade-down-fallback {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        75% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fonts-loaded .rad-fade-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    .fonts-loaded .rad-fade-down.rad-animate {
+        animation-name: rad-fade-down;
+        animation-duration: 1.1s;
+    }
+
+    @keyframes rad-fade-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+    .rad-scale-down {
+        will-change: opacity, transform;
+        animation-name: rad-scale-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform-origin: 50% 0;
+    }
+
+    @keyframes rad-scale-down-fallback {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        75% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+
+    .fonts-loaded .rad-scale-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: scaleY(0.95);
+    }
+
+    .fonts-loaded .rad-scale-down.rad-animate {
+        animation-name: rad-scale-down;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-scale-down {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+</style>
+
+
+<link rel="stylesheet" href="https://alexganz.github.io/website/css/main.css"/>
+
+<link rel="stylesheet" href="https://alexganz.github.io/website/css/rad-icons.css"/>
+
+<link rel="stylesheet" href="https://alexganz.github.io/website/css/custom.css"/>
+
+
+
+
+
+</head>
+
+<body>
+
+	<header class="header fixed-top rad-animation-group" id="header">
+  <div class="container rad-fade-in">
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+      <a class="navbar-brand" href="https://alexganz.github.io/website/">
+        <span>Alexandre</span>
+        <span>Ganz</span>
+
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent, #header"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://alexganz.github.io/website/">HOME</a>
+          </li>
+
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#about"
+              >ABOUT</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#portfolio"
+              >PORTFOLIO</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#contact"
+              >CONTACT</a
+            >
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+
+
+<section class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
+  <div class="rad-showcase__bg">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="https://alexganz.github.io/website/img/showcase/showcase.png"
+      data-srcset="https://alexganz.github.io/website/img/showcase/showcase.png 1x, https://alexganz.github.io/website/img/showcase/showcase@2x.png 2x"
+      alt=""
+    />
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6">
+        <h1 class="display-1">
+          Hello, I’m Alex.
+          <br />
+          <span
+            >Data &amp; Analytics Consultant</span
+          >
+        </h1>
+        <p class="lead">
+          I work at <a target='_blank' href='https://inviso.dk/'>Inviso by Devoteam</a>, a Data Science consultancy company in Denmark that helps other organizations to be more digital and analytics-driven, also, I'm finishing my Master's degree in Business Analytics at the <a target='_blank' href='https://www.dtu.dk/english/education/graduate/msc-programmes/business-analytics'>Technical University of Denmark (DTU)</a> seeking a specialization in Predictive Analytics. The purpose of this website is to record my progress in my Data Science career and share my findings, hope you enjoy it!
+        </p>
+        <a
+          href="https://www.linkedin.com/in/alexandre-ganz-65795555/"
+          class="btn btn-primary"
+        >
+          <i class="icon-mail-fill"></i>
+          Contact
+        </a>
+      </div>
+    </div>
+    <div class="row platform-links">
+      <div class="col-12">
+
+        <a href="https://www.linkedin.com/in/alexandre-ganz-65795555/" target="_blank"
+          ><i class="icon-linkedin-line"></i
+        ></a>
+
+        <a href="https://github.com/alexandreganz" target="_blank"
+          ><i class="icon-github-line"></i
+        ></a>
+
+        <a href="https://www.instagram.com/alemuchinski/" target="_blank"
+          ><i class="icon-instagram-line"></i
+        ></a>
+
+      </div>
+    </div>
+  </div>
+  <div class="rad-showcase__bg rad-showcase__bg--mobile">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="https://alexganz.github.io/website/img/showcase/showcase-mobile.jpg"
+      alt=""
+    />
+  </div>
+</section>
+
+
+
+
+<section class="section rad-animation-group pb-0" id="about">
+  <div class="container rad-fade-down">
+    <div class="row d-flex flex-column-reverse flex-md-row">
+      <div class="about__profile-picture col-12 col-md-6">
+        <img
+          class="lozad img-responsive image-left-overflow"
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://alexganz.github.io/website/img/who-am-i/apm.png"
+          data-srcset="https://alexganz.github.io/website/img/who-am-i/apm.png 1x, https://alexganz.github.io/website/img/who-am-i/apm_2x.png 2x"
+          alt="Profile Picture"
+        />
+      </div>
+      <div class="col-12 col-md-6 my-auto my-auto">
+        <h2>Who am I?</h2>
+        <p class="lead">
+          <p class="lead"> I am Brazilian, 24 years old, coming from a family of teachers in the city of Curitiba - Brazil. Currently, I am living in Denmark making one of my dreams of studying abroad happen, also, I am working as a Data & Analytics Consultant teaching and building several data tools for many companies. As one of my personal projects, I help Brazilians students who, like me, could not afford to study abroad to do so. I believe that it is my responsibility to give back the opportunities that have been provided to me in life, and I try to do this through an NGO called BRASA. </p> <p class="lead"> My area of focus lies in designing and analyzing data projects using Python, Tableau, Alteryx and Snowflake. I enjoy coding as much as talking with users to iterate and improve the experiences that reach business goals. </p>
+        </p>
+        <a
+          href="https://www.linkedin.com/in/alexandre-ganz-65795555/"
+          target="_blank"
+          class="btn btn-primary"
+        >
+          <i class="icon-smile-fill"></i>
+          About Me
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section section--border-bottom rad-animation-group">
+    <div class="container">
+        <div class="row rad-fade-down">
+            <div class="col-12">
+                <h2>Education</h2>
+                <div class="row pt-2 pt-md-4">
+
+                    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+                        <div class="education">
+                            <div class="education__date">2021-2023</div>
+                            <div class="education__title">Technical University of Denmark (DTU)</div>
+                            <div class="education__degree">
+                                Masters of Sciences (MSc), Business Analytics Engineering
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+                        <div class="education">
+                            <div class="education__date">2013-2015</div>
+                            <div class="education__title">National Service of Industrial Learning (SENAI)</div>
+                            <div class="education__degree">
+                                Associate Degree, Computer Science (Full Scholarship Student)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+                        <div class="education">
+                            <div class="education__date">2016-2019</div>
+                            <div class="education__title">Positivo University (UP)</div>
+                            <div class="education__degree">
+                                Bachelor of Sciences (BSc), Applied Economics (Full Scholarship Student)
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="experience" class="section section--border-bottom rad-animation-group">
+    <div class="container">
+        <div class="row flex-column-reverse flex-md-row rad-fade-down">
+            <div class="col-12 col-sm-6 mt-5 mt-sm-0">
+
+                <div class="experience">
+                    <div class="experience__date">Mar 2022 - Present</div>
+                    <div class="experience__title">Data &amp; Analytics Consultant</div>
+                    <div class="experience__company">Inviso by Devoteam</div>
+                </div>
+
+                <div class="experience">
+                    <div class="experience__date">Sep 2021 - Feb 2022</div>
+                    <div class="experience__title">Global Marketing Analyst - Agricultural and Industrial Biosolutions</div>
+                    <div class="experience__company">Novozymes Denmark</div>
+                </div>
+
+                <div class="experience">
+                    <div class="experience__date">Aug 2020 - Sep 2021</div>
+                    <div class="experience__title">Regional Marketing Analyst - Consumer Biosolutions</div>
+                    <div class="experience__company">Novozymes Latin America</div>
+                </div>
+
+                <div class="experience">
+                    <div class="experience__date">Feb 2019 - Sep 2020</div>
+                    <div class="experience__title">Administrative Assistant - Regional Presidency</div>
+                    <div class="experience__company">Novozymes Latin America</div>
+                </div>
+
+                <div class="experience">
+                    <div class="experience__date">Nov 2017 - Feb 2019</div>
+                    <div class="experience__title">Intern - Corporate Finance</div>
+                    <div class="experience__company">Novozymes Latin America</div>
+                </div>
+
+            </div>
+            <div class="col-12 col-sm-6">
+                <h2>Experience</h2>
+                <p class="lead">
+                    Over 5&#43; years of experience working with companies from all over the world. I design &amp; develop data projects to help businesses and improve their targets.
+                </p>
+                <a href="https://www.linkedin.com/in/alexandre-ganz-65795555/" class="btn btn-primary"
+                   target="_blank">
+                    <i class="icon-linkedin-fill"></i>
+                    Linkedin
+                    <i class="icon-arrow-right"></i></a>
+                <a href="https://drive.google.com/file/d/1eVrwiP2p6oL6lo3PH-s1zP3qpQkZt5Im/view?usp=sharing" class="btn btn-frameless"
+                   target="_blank">
+                    <i class="icon-profile-fill"></i>
+                    Download My Resume
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="portfolio" class="section section--border-bottom">
+  <div class="container">
+    <h2 class=" rad-animation-group rad-fade-down">
+      Certifications &amp; Badges
+    </h2>
+    <div class="row row--padded rad-animation-group rad-fade-down">
+      <div class="col-12">
+        <div class="clients">
+
+          <div class="clients__item">
+            <a href="https://www.credly.com/users/alexandre-muchinski/badges">
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="https://alexganz.github.io/website/img/clients/alteryx-designer-advanced-certification.png"
+                data-srcset="https://alexganz.github.io/website/img/clients/alteryx-designer-advanced-certification.png 1x, https://alexganz.github.io/website/img/clients/alteryx-designer-advanced-certification_2x.png 2x"
+                alt="Alteryx_Advanced"
+              />
+            </a>
+          </div>
+
+          <div class="clients__item">
+            <a href="https://www.credly.com/users/alexandre-muchinski/badges">
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="https://alexganz.github.io/website/img/clients/alteryx-designer-core-certification.png"
+                data-srcset="https://alexganz.github.io/website/img/clients/alteryx-designer-core-certification.png 1x, https://alexganz.github.io/website/img/clients/alteryx-designer-core-certification_2x.png 2x"
+                alt="Alteryx_Core"
+              />
+            </a>
+          </div>
+
+          <div class="clients__item">
+            <a href="https://www.credly.com/users/alexandre-muchinski/badges">
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="https://alexganz.github.io/website/img/clients/tableau-designer.png"
+                data-srcset="https://alexganz.github.io/website/img/clients/tableau-designer.png 1x, https://alexganz.github.io/website/img/clients/tableau-designer_2x.png 2x"
+                alt="Tableau_Designer"
+              />
+            </a>
+          </div>
+
+          <div class="clients__item">
+            <a href="https://www.credly.com/users/alexandre-muchinski/badges">
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="https://alexganz.github.io/website/img/clients/tableau-data-scientist.png"
+                data-srcset="https://alexganz.github.io/website/img/clients/tableau-data-scientist.png 1x, https://alexganz.github.io/website/img/clients/tableau-data-scientist_2x.png 2x"
+                alt="Tableau_Data"
+              />
+            </a>
+          </div>
+
+          <div class="clients__item">
+            <a href="https://www.credly.com/users/alexandre-muchinski/badges">
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="https://alexganz.github.io/website/img/clients/hands-on-essentials-data-warehouse.png"
+                data-srcset="https://alexganz.github.io/website/img/clients/hands-on-essentials-data-warehouse.png 1x, https://alexganz.github.io/website/img/clients/hands-on-essentials-data-warehouse_2x.png 2x"
+                alt="Snowflake_data"
+              />
+            </a>
+          </div>
+
+          <div class="clients__item">
+            <a href="https://www.credly.com/users/alexandre-muchinski/badges">
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="https://alexganz.github.io/website/img/clients/hands-on-essentials-data-applications.png"
+                data-srcset="https://alexganz.github.io/website/img/clients/hands-on-essentials-data-applications.png 1x, https://alexganz.github.io/website/img/clients/hands-on-essentials-data-applications_2x.png 2x"
+                alt="Snowflake_app"
+              />
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+    >
+
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>Using Spark to Handle AirBnB&#39;s Big Data - Python</h3>
+        <p class="lead">
+          This project analyzes massive amounts of data to discover insights in listings and the best cost-effective locations to book stays.
+        </p>
+        <a href="https://github.com/alexandreganz/PySpark_AirBnB" class="btn btn-primary"
+          >Case Study<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-left-backward'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://alexganz.github.io/website/img/works/airbnb.png"
+          data-srcset="https://alexganz.github.io/website/img/works/airbnb.png 1x, https://alexganz.github.io/website/img/works/airbnb_2x.png 2x"
+          alt="Using Spark to Handle AirBnB&#39;s Big Data - Python"
+        />
+      </div>
+
+    </div>
+
+    <div
+      class="row row--padded rad-animation-group rad-fade-down "
+    >
+
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-right-backward'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://alexganz.github.io/website/img/works/bitcoin.png"
+          data-srcset="https://alexganz.github.io/website/img/works/bitcoin.png 1x, https://alexganz.github.io/website/img/works/bitcoin_2x.png 2x"
+          alt="Forecasting Bitcoin Transactions with SARIMA - R"
+        />
+      </div>
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>Forecasting Bitcoin Transactions with SARIMA - R</h3>
+        <p class="lead">
+          In this project I explore how to build a forecasting model using ARIMA with seasonality, and additionally proving its effectiveness by performing residual analysis.
+        </p>
+        <a href="https://github.com/alexandreganz/Forecasting-Bitcoin-Transactions-using-SARIMA" class="btn btn-primary"
+          >Case Study<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+
+    </div>
+
+    <div
+      class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+    >
+
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>Movie Recommender System - Python</h3>
+        <p class="lead">
+          The project aims to analyze the public database TMDB and model a system to recommend similar movies for users to watch.
+        </p>
+        <a href="https://github.com/alexandreganz/Recommender-System-TMDB" class="btn btn-primary"
+          >Case Study<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-left-forward'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://alexganz.github.io/website/img/works/tmdb.png"
+          data-srcset="https://alexganz.github.io/website/img/works/tmdb.png 1x, https://alexganz.github.io/website/img/works/tmdb_2x.png 2x"
+          alt="Movie Recommender System - Python"
+        />
+      </div>
+
+    </div>
+
+    <div
+      class="row row--padded rad-animation-group rad-fade-down "
+    >
+
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-right-forward'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://alexganz.github.io/website/img/works/sf.png"
+          data-srcset="https://alexganz.github.io/website/img/works/sf.png 1x, https://alexganz.github.io/website/img/works/sf_2x.png 2x"
+          alt="Analyzing San Francisco Crime and its Data Errors - Python"
+        />
+      </div>
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>Analyzing San Francisco Crime and its Data Errors - Python</h3>
+        <p class="lead">
+          In this project I try to show the patterns of crimes committed in the San Francisco area and how to analyze errors in the data records.
+        </p>
+        <a href="https://github.com/alexandreganz/Geospatial-Analysis--of-the-crimes-in-San-Francisco" class="btn btn-primary"
+          >Case Study<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+
+    </div>
+
+    <div
+      class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+    >
+
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>Showing Inequality Through Water Quality in New York City  - Python &amp; Alteryx</h3>
+        <p class="lead">
+          The purpose of this project is to show New York City&#39;s management that common problems within the city are prioritized according to the real estate value of the area, we created an interactive page to see this relationship of how certain areas suffer more than others.
+        </p>
+        <a href="https://newyork-project.netlify.app/" class="btn btn-primary"
+          >Case Study<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-left-backward'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://alexganz.github.io/website/img/works/water.png"
+          data-srcset="https://alexganz.github.io/website/img/works/water.png 1x, https://alexganz.github.io/website/img/works/water_2x.png 2x"
+          alt="Showing Inequality Through Water Quality in New York City  - Python &amp; Alteryx"
+        />
+      </div>
+
+    </div>
+
+    <div
+      class="row row--padded rad-animation-group rad-fade-down "
+    >
+
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-right-backward'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://alexganz.github.io/website/img/works/plane.png"
+          data-srcset="https://alexganz.github.io/website/img/works/plane.png 1x, https://alexganz.github.io/website/img/works/plane_2x.png 2x"
+          alt="How Dangerous is Bird Strike on an Airplane? - Tableau"
+        />
+      </div>
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>How Dangerous is Bird Strike on an Airplane? - Tableau</h3>
+        <p class="lead">
+          An interactive dashboard to visualize bird damages on airplanes in the United States.
+        </p>
+        <a href="https://public.tableau.com/app/profile/alexandre.muchinski/viz/Dashboard_16365785913830/Dashboard" class="btn btn-primary"
+          >Case Study<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section class="section rad-animation-group section--border-bottom">
+    <div class="container">
+        <h2 class="rad-fade-down">Testimonials</h2>
+        <div class="row row--padded mb-0 rad-fade-down">
+
+            <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
+                <i class="icon-quote"></i>
+                <p>
+                    Alexandre is an extremely committed and productive team player. He finds satisfaction in contributing to teams and individuals, and for this reason has become a fundamental part of our team. He is especially talented in projects that require analysis and constant learning. Being a futurist, he is always looking for improvements and new challenges, which inspires and encourages his colleagues to also deliver beyond the expected standard.
+                </p>
+                <div class="testimonial__author">
+                    <img class="lozad testimonial__author-image"
+                         src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                         data-src="https://alexganz.github.io/website/img/testimonials/sheila.png"
+                         data-srcset="https://alexganz.github.io/website/img/testimonials/sheila.png 1x, https://alexganz.github.io/website/img/testimonials/sheila_2x.png 2x"
+                         alt="Sheila Coque"/>
+                    <div class="testimonial__author-info">
+                        <h4>Sheila Coque</h4>
+                        <span>Marketing Solutions Consultant, LinkedIn</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
+                <i class="icon-quote"></i>
+                <p>
+                    During the last year at university, we spent plenty of time working together on our bachelor thesis. Despite already working full-time, Alexandre was always there, eager to help and showing full commitment to our research, he never gave excuses for not doing his part. Faced with similar situations, many people follow the principle of least effort, but not Alexandre. He is one of the most ambitious and dedicated person I have ever met, and I wish him all the best for the future!
+                </p>
+                <div class="testimonial__author">
+                    <img class="lozad testimonial__author-image"
+                         src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                         data-src="https://alexganz.github.io/website/img/testimonials/allan.png"
+                         data-srcset="https://alexganz.github.io/website/img/testimonials/allan.png 1x, https://alexganz.github.io/website/img/testimonials/allan_2x.png 2x"
+                         alt="Allan Campos"/>
+                    <div class="testimonial__author-info">
+                        <h4>Allan Campos</h4>
+                        <span>ESG Analyst, Bank of America</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
+                <i class="icon-quote"></i>
+                <p>
+                     have had the pleasure of knowing and working with Alexandre for three years, he brings energy, enthusiasm and commitment to every project he is assigned to. These traits are expected in any successful member of a business organization, and in this regard, Alexandre fits right in. It consists of providing high quality decision-making solutions, which speaks volumes to his overall intellect and ability to learn new things in order to achieve his goals.
+                </p>
+                <div class="testimonial__author">
+                    <img class="lozad testimonial__author-image"
+                         src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                         data-src="https://alexganz.github.io/website/img/testimonials/pedro.png"
+                         data-srcset="https://alexganz.github.io/website/img/testimonials/pedro.png 1x, https://alexganz.github.io/website/img/testimonials/pedro_2x.png 2x"
+                         alt="Pedro Luiz Fernandes"/>
+                    <div class="testimonial__author-info">
+                        <h4>Pedro Luiz Fernandes</h4>
+                        <span>Honorary Consul of Denmark &amp; Co-founder CarbonZerø</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="contact" class="section section--contact pt-0">
+    <div class="container">
+        <div class="contact">
+            <h2>Contact</h2>
+            <div class="row pt-2">
+                <div class="col-12 col-lg-7">
+                    <form action="https://getform.io/f/e8e9cb97-0d4b-4b8f-bb6e-306d4ab6e725" method="POST">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" name="name" id="full_name"
+                                       placeholder="Full Name"/>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" name="email" id="email"
+                                       placeholder="Email Address"/>
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <textarea name="message" id="message"
+                                          cols="30" rows="3" placeholder="Type Your Message Here"></textarea>
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="icon-mail-fill"></i>
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-5 contact__info">
+                    <h4>Phone Number</h4>
+                    <span>&#43;45 31 67 64 90</span>
+                    <h4>Email</h4>
+                    <span><a href="mailto:contact@alexganz.me">contact@alexganz.me</a></span>
+                    <h4>Current Location</h4>
+                    <span>Copenhagen, Denmark</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+	<footer class="footer">
+  <div class="container">
+    <div class="footer__left">
+      <div class="footer__copy">
+
+      </div>
+    </div>
+    <div class="footer__links">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link" href="/">HOME</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="https://alexganz.github.io/website">ABOUT</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="https://alexganz.github.io/website">PORTFOLIO</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="https://alexganz.github.io/website">CONTACT</a>
+        </li>
+
+      </ul>
+    </div>
+    <div class="footer__right">
+      <a href="https://radity.com/"
+        ><img
+          src="https://alexganz.github.io/website/"
+          srcset="https://alexganz.github.io/website/ 1x, https://alexganz.github.io/website/ 2x"
+          alt=""
+      /></a>
+    </div>
+  </div>
+</footer>
+
+    <script src='https://alexganz.github.io/website/js/rad-animations.js'></script>
+<script src='https://alexganz.github.io/website/js/library/lozad.min.js'></script>
+<script>
+  window.addEventListener("load", function() {
+    var observer = window.lozad(".lozad", {
+      rootMargin: window.innerHeight / 2 + "px 0px",
+      threshold: 0.01
+    });
+    observer.observe();
+  });
+</script>
+<script src='https://alexganz.github.io/website/js/library/jquery-3.3.1.slim.min.js'></script>
+<script src='https://alexganz.github.io/website/js/library/bootstrap.min.js'></script>
+<script src='https://alexganz.github.io/website/js/sticky-header.js'></script>
+<script src='https://alexganz.github.io/website/js/library/smooth-scroll.polyfills.min.js'></script>
+<script src='https://alexganz.github.io/website/js/library/fontfaceobserver.js'></script>
+<script>
+  (function(w) {
+
+    if (w.document.documentElement.className.indexOf("fonts-loaded") > -1) {
+      return;
+    }
+    var fontA = new w.FontFaceObserver("Inter", {
+      weight: 300
+    });
+    var fontB = new w.FontFaceObserver("Inter", {
+      weight: 400
+    });
+    var fontC = new w.FontFaceObserver("Inter", {
+      weight: 500
+    });
+    var fontD = new w.FontFaceObserver("Inter", {
+      weight: 600
+    });
+    var fontE = new w.FontFaceObserver("Inter", {
+      weight: 700
+    });
+    var fontF = new w.FontFaceObserver("Inter", {
+      weight: 900
+    });
+    w.Promise.all([fontA.load(), fontC.load(), fontF.load()]).then(function() {
+      w.document.documentElement.className += " fonts-loaded";
+    });
+  })(this);
+</script>
+<script>
+  const scroll = new SmoothScroll('a[href*="#"]');
+    $('a.nav-link').on('click', () => {
+      const navbar = $('.navbar-collapse');
+      if (navbar && navbar.hasClass('show')) {
+        $('.navbar-toggler').click();
+      }
+    })
+</script>
+
+</body>
+
+</html>
